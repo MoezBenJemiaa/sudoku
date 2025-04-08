@@ -1,29 +1,45 @@
 # 🧩 Sudoku Generator & Solver
 
-This Python project generates a Sudoku puzzle with a valid randomized board and solves it using a backtracking algorithm.
+This Python project generates a valid Sudoku puzzle with a randomized board, then solves it using a recursive backtracking algorithm.
 
 ---
 
 ## 📋 Features
 
-- ✅ Generates a complete, valid Sudoku board
-- ❌ Randomly removes values to create a playable puzzle
-- 🧠 Solves the puzzle using recursion & backtracking
-- 🎯 Adjustable difficulty by setting how many numbers to pre-fill
+- ✅ Generates a full valid Sudoku board
+- 🔀 Randomly removes cells to create a puzzle
+- 🧠 Solves the puzzle using backtracking
+- 🎯 Adjustable difficulty by controlling how many numbers are pre-filled
 
 ---
 
-## 🛠 How It Works
+## ▶️ Run the Program
 
-### `generate_board(num)`
-- Generates a full, valid 9x9 Sudoku board.
-- Randomly removes cells based on `num` (number of pre-filled values).
-  - `num = 0` → hard (about 25% filled)
-  - `num = 81` → full board (nothing to solve)
+1. **Clone the repo** or download the Python file.
+2. Make sure you have **Python 3.x** installed.
+3. Run the script:
 
-### `solve(board)`
-- Solves the board using a classic backtracking algorithm.
-- Fills empty cells with valid numbers recursively.
+```bash
+python sudoku.py
+```
+
+You will see:
+
+- A fully generated board.
+- A playable puzzle with empty cells.
+- The solved version of the board.
+
+---
+
+## 📂 File Structure & Key Functions
+
+| Function           | Description                                                              |
+|--------------------|---------------------------------------------------------------------------|
+| `generate_board(num)` | Generates and masks a Sudoku board based on difficulty                 |
+| `print_board(board)`  | Prints the board in a readable grid format                             |
+| `possible(board, pos, num)` | Checks if placing a number is valid for the given position       |
+| `next_empty(board)` | Finds the next empty cell to be filled (i.e., contains a 0)             |
+| `solve(board)`       | Uses recursion and backtracking to solve the puzzle                    |
 
 ---
 
@@ -49,21 +65,23 @@ This Python project generates a Sudoku puzzle with a valid randomized board and 
 ...
 ```
 
-## 📋 Features
+---
 
-- ✅ Generates a full valid Sudoku board
-- 🔀 Randomly removes cells to create a puzzle
-- 🧠 Solves the puzzle using backtracking
-- 🎯 Adjustable difficulty by controlling how many numbers are pre-filled
+## 🔮 Future Ideas
+
+- 🎨 Add a graphical user interface using Tkinter or Pygame
+- 🧩 Add support for selecting difficulty levels (easy, medium, hard)
+- 🧪 Implement a Sudoku board validator
+- ⏱ Add a timer and scoring system for players
+- 🌍 Export puzzles to files or share online
 
 ---
 
-## ▶️ Run the Program
+## 📜 License
 
-1. **Clone the repo** or download the Python file.
-2. Make sure you have **Python 3.x** installed.
-3. Run the script:
+This project is licensed under the [MIT License](LICENSE).  
+Feel free to use, modify, and distribute it as you like.
 
-```bash
-python sudoku.py
+---
 
+### Made with ❤️ in Python
