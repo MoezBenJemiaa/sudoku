@@ -47,7 +47,7 @@ This Python project generates a Sudoku puzzle with a valid randomized board and 
 5 0 0 | 6 0 0 | 0 1 0
 0 7 2 | 0 9 0 | 3 0 0
 ...
-
+```
 
 ## 📋 Features
 
