@@ -47,3 +47,23 @@ This Python project generates a Sudoku puzzle with a valid randomized board and 
 5 0 0 | 6 0 0 | 0 1 0
 0 7 2 | 0 9 0 | 3 0 0
 ...
+
+
+## 📋 Features
+
+- ✅ Generates a full valid Sudoku board
+- 🔀 Randomly removes cells to create a puzzle
+- 🧠 Solves the puzzle using backtracking
+- 🎯 Adjustable difficulty by controlling how many numbers are pre-filled
+
+---
+
+## ▶️ Run the Program
+
+1. **Clone the repo** or download the Python file.
+2. Make sure you have **Python 3.x** installed.
+3. Run the script:
+
+```bash
+python sudoku.py
+
